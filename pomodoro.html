@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>Webpage</title>
+    <link rel="stylesheet" href="webpage.css">
+    <link rel="javascript" href="pomodoro.js">
+
+
+</head>
+
+<body>
+
+
+    <h1>Prioritise your Tasks, Lessen your Mental Load</h1>
+<main ng-app="PomodoroApp" ng-controller="MainCtrl">
+  <header>
+    <div class="session">
+      <div class="breakCtrl">
+        <p>break length</p>
+        <button class="minus" ng-click="breakLengthChange(-1)">-</button><span class="time">{{ breakLength }}</span>
+        <button class="plus" ng-click="breakLengthChange(1)">+</button>
+      </div>
+      <div class="sessionCtrl">
+        <p>session length</p>
+        <button class="minus" ng-click="sessionLengthChange(-1)">-</button><span class="time">{{ sessionLength }}</span>
+        <button class="plus" ng-click="sessionLengthChange(1)">+</button>
+      </div>
+    </div>
+  </header>
+  <section ng-click="toggleTimer()">
+    <div class="timer">
+      <p class="title">{{ sessionName }}</p>
+      <p>{{ timeLeft }}</p><span class="fill" ng-style="{'height':fillHeight, 'background':fillColor }"></span>
+    </div>
+  </section>
+</main>
+
