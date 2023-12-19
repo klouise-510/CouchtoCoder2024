@@ -8,7 +8,7 @@
   </head>
   <body>
     <div>
-      <h1>title heading</h1>
+      <h1>Pomodoro Timer</h1>
     </div>
     <div class="timer-container">
       <!-- Timer display -->
@@ -17,8 +17,73 @@
       <button id="startBtn" onclick="startTimer()">Start</button>
       <button id="resetBtn" onclick="resetTimer()">Reset</button>
     </div>
+    <div>
+      <p>Remember to take a five minute break between tasks</p>
+    </div>
+
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3"></div>
+          <div class="col-xs-12 col-sm-6 quotebox">
+            <div class="row">
+              <div class="col-xs-12">
+                <blockquote>
+                  <i class="fa fa-quote-left quotemark"></i>
+                  <h2 id="quotetext"></h2>
+                  <footer id="quotesource"></footer>
+                </blockquote>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-12">
+                <div class="social-icons icon-rounded"><a id="tweet-quote" title="Tweet this quote!" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="quotebutton"><button class="btn btn-primary" id="newquote">New Quote</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-3"></div>
+        </div>
+      </div>
+
+   
+
+<div>
+  <div id="myDIV" class="header">
+    <h2>to do list</h2>
+    <input type="text" id="myInput" placeholder="Title...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+  </div>
+  
+  <ul id="myUL">
+    <li>finish designing this webpage</li>
+    <li>take a walk</li>
+    <li>Read a book</li>
+  </ul>
+
+
+</div>
+
+<div>
+  <img src="https://e1.pxfuel.com/desktop-wallpaper/82/713/desktop-wallpaper-rain-on-leaves-for-engine-spring-rain-wind.jpg" alt="rain-image" id="rain-image" >
+</div>
+
+
+
+    <footer>
+      <div class="footer">   
+      <p><a class="home" href="index.html">take me back home</a></p>
+      </div>
+
+    
+  
 
     <!-- JavaScript file -->
     <script src="pomodoro.js"></script>
   </body>
 </html>
+
+
+
