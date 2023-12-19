@@ -6,9 +6,12 @@
 
     ul {
         
-        color:bisque;
+        color:whitesmoke;
         text-align: center;
         font-family: "Times New Roman";
+        background-color: #658354;
+        padding: 10px;
+        
 
     }
 
@@ -22,11 +25,13 @@
         font-family: "Times New Roman";
         font-size: 20px;
         color: whitesmoke;
+        background-color: #4b6043;
         text-align: center;
+        padding: 20px;;
     }
 
     h3{
-        color: whitesmoke;
+        color: #658354;
         text-align: center;
         font-size: 30px;
     }
@@ -44,6 +49,8 @@
             margin-left: auto;
             margin-right: auto;
             width: 50%;
+            border: #658354;
+            border-style: groove;
             }
 
 
@@ -55,4 +62,4 @@
                   }
               }
 
-              
+ 
